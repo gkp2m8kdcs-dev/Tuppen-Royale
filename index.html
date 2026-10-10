@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Tuppen Royale — Premium Tüppen Card Game for iPhone</title>
+<meta name="description" content="Tuppen Royale brings the traditional German trick-taking card game Tüppen to your iPhone. Three players, four tricks, and a fourth trick that decides everything." />
+<link rel="icon" href="https://coresg-normal.trae.ai/api/ide/v1/text_to_image?prompt=A%20royal%20gold%20crown%20with%20four%20card%20suits%20icons%20embedded%2C%20premium%20dark%20background%2C%20minimalist%20app%20icon%20style&image_size=square" />
+<style>
+  :root{
+    --bg:#0f172a;
+    --bg-2:#111c34;
+    --card:#1b2540;
+    --text:#e6ecff;
+    --muted:#9aa6c7;
+    --accent:#e2b85a;
+    --accent-2:#f5d27a;
+    --link:#7cc6ff;
+    --border:rgba(255,255,255,.08);
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;padding:0;background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;line-height:1.6;-webkit-font-smoothing:antialiased}
+  a{color:var(--link);text-decoration:none}
+  a:hover{text-decoration:underline}
+  .container{max-width:960px;margin:0 auto;padding:0 24px}
+
+  /* Header */
+  header{padding:28px 0;border-bottom:1px solid var(--border);position:sticky;top:0;background:rgba(15,23,42,.85);backdrop-filter:saturate(180%) blur(12px);z-index:10}
+  .nav{display:flex;align-items:center;justify-content:space-between;gap:16px}
+  .brand{display:flex;align-items:center;gap:12px;font-weight:700;letter-spacing:.3px;font-size:18px}
+  .brand img{width:34px;height:34px;border-radius:8px;box-shadow:0 4px 14px rgba(0,0,0,.4)}
+  nav ul{list-style:none;margin:0;padding:0;display:flex;gap:22px;font-size:14px;color:var(--muted)}
+  nav ul a{color:var(--muted)}
+  nav ul a:hover{color:var(--text);text-decoration:none}
+
+  /* Hero */
+  .hero{padding:80px 0 60px;text-align:center;background:radial-gradient(1200px 500px at 50% -10%, rgba(226,184,90,.18), transparent 60%)}
+  .hero h1{font-size:48px;line-height:1.15;margin:0 0 18px;letter-spacing:-.02em}
+  .hero h1 span{background:linear-gradient(90deg,var(--accent),var(--accent-2));-webkit-background-clip:text;background-clip:text;color:transparent}
+  .hero p.lead{font-size:19px;color:var(--muted);max-width:680px;margin:0 auto 28px}
+  .badges{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin-bottom:28px}
+  .badge{background:var(--card);border:1px solid var(--border);padding:8px 14px;border-radius:999px;font-size:13px;color:var(--muted)}
+  .cta{display:inline-block;background:linear-gradient(180deg,var(--accent-2),var(--accent));color:#1a1300;font-weight:700;padding:14px 28px;border-radius:12px;box-shadow:0 10px 30px rgba(226,184,90,.25);border:none;cursor:pointer}
+  .cta:hover{text-decoration:none;transform:translateY(-1px)}
+
+  /* Sections */
+  section{padding:64px 0;border-top:1px solid var(--border)}
+  h2{font-size:30px;margin:0 0 18px;letter-spacing:-.01em}
+  h3{font-size:20px;margin:24px 0 10px}
+  .muted{color:var(--muted)}
+  .grid{display:grid;gap:20px}
+  .grid.cols-3{grid-template-columns:repeat(3,1fr)}
+  .grid.cols-2{grid-template-columns:repeat(2,1fr)}
+  @media (max-width:760px){.grid.cols-3,.grid.cols-2{grid-template-columns:1fr}.hero h1{font-size:36px}}
+  .card{background:var(--bg-2);border:1px solid var(--border);border-radius:16px;padding:24px}
+  .feature-icon{width:40px;height:40px;border-radius:10px;background:rgba(226,184,90,.12);display:flex;align-items:center;justify-content:center;font-size:22px;margin-bottom:12px}
+
+  /* Screenshot showcase */
+  .showcase{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+  @media (max-width:760px){.showcase{grid-template-columns:1fr}}
+  .shot{aspect-ratio:9/16;border-radius:18px;overflow:hidden;border:1px solid var(--border);background:#000}
+  .shot img{width:100%;height:100%;object-fit:cover;display:block}
+
+  /* Rules */
+  .rules{background:var(--bg-2);border:1px solid var(--border);border-radius:16px;padding:28px}
+  .rules ol{padding-left:20px}
+  .rules li{margin:8px 0}
+
+  /* Support */
+  .support{background:linear-gradient(180deg,rgba(226,184,90,.10),transparent);border:1px solid var(--border);border-radius:16px;padding:32px;text-align:center}
+  .email{font-size:18px;font-weight:600}
+
+  /* Footer */
+  footer{padding:36px 0;border-top:1px solid var(--border);color:var(--muted);font-size:14px}
+  .foot-links{display:flex;gap:18px;flex-wrap:wrap;justify-content:center;margin-bottom:8px}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="container nav">
+    <div class="brand">
+      <img alt="Tuppen Royale icon" src="https://coresg-normal.trae.ai/api/ide/v1/text_to_image?prompt=A%20royal%20gold%20crown%20with%20four%20card%20suits%20icons%20embedded%2C%20premium%20dark%20background%2C%20minimalist%20app%20icon%20style&image_size=square" />
+      <span>Tuppen Royale</span>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#screens">Screenshots</a></li>
+        <li><a href="#rules">How to Play</a></li>
+        <li><a href="#support">Support</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="container">
+    <div class="badges">
+      <div class="badge">iPhone • iOS</div>
+      <div class="badge">Fully Offline</div>
+      <div class="badge">English • Deutsch • 简体中文</div>
+    </div>
+    <h1>The classic German trick-taking game,<br/><span>refined for your pocket.</span></h1>
+    <p class="lead">Tuppen Royale brings the traditional Rhineland card game <em>Tüppen</em> to iPhone. Three players at the table, four cards each, and a fourth trick that decides everything.</p>
+    <a class="cta" href="#support">Get the App</a>
+  </div>
+</section>
+
+<section id="features">
+  <div class="container">
+    <h2>Built for depth. Designed for everyone.</h2>
+    <p class="muted">Every detail — from the AI opponents to the card backs — is crafted to make each match feel like a night at a Rhineland card table.</p>
+
+    <div class="grid cols-3" style="margin-top:30px">
+      <div class="card">
+        <div class="feature-icon">🃏</div>
+        <h3>Authentic Tüppen</h3>
+        <p class="muted">A 32-card deck, the Seven of Diamonds opens every round, and the King of Clubs on the fourth trick claims the pot.</p>
+      </div>
+      <div class="card">
+        <div class="feature-icon">🤖</div>
+        <h3>Three AI Levels</h3>
+        <p class="muted">Tune the challenge from friendly to sharp. Two computer opponents stand ready at every table.</p>
+      </div>
+      <div class="card">
+        <div class="feature-icon">🎨</div>
+        <h3>Custom Card Backs</h3>
+        <p class="muted">Snap a photo or pick one from your library. Four rich themes round out the experience.</p>
+      </div>
+      <div class="card">
+        <div class="feature-icon">📊</div>
+        <h3>Full Statistics</h3>
+        <p class="muted">Wins, losses, draws, streaks, knockouts, per-difficulty breakdowns, and a complete match history.</p>
+      </div>
+      <div class="card">
+        <div class="feature-icon">🏆</div>
+        <h3>13 Achievements</h3>
+        <p class="muted">Unlock rewards as you master the game, from first knockouts to long winning streaks.</p>
+      </div>
+      <div class="card">
+        <div class="feature-icon">♿</div>
+        <h3>Accessible by Design</h3>
+        <p class="muted">VoiceOver hints, larger text, reduced motion, sound effects, and rich haptic feedback for every player.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="screens">
+  <div class="container">
+    <h2>Take a seat at the table.</h2>
+    <p class="muted">A premium card-table experience, designed to feel at home on every iPhone screen.</p>
+    <div class="showcase" style="margin-top:28px">
+      <div class="shot"><img alt="Game board" src="https://coresg-normal.trae.ai/api/ide/v1/text_to_image?prompt=Premium%20dark%20felt%20card%20table%20with%20three%20hands%20of%20German%20playing%20cards%20fanned%20out%2C%20golden%20accents%2C%20soft%20ambient%20lighting%2C%20iPhone%20screenshot%20mockup%2C%20ultra%20realistic&image_size=portrait_16_9" /></div>
+      <div class="shot"><img alt="Profile portrait" src="https://coresg-normal.trae.ai/api/ide/v1/text_to_image?prompt=Stylish%20player%20profile%20card%20with%20portrait%20photo%20placeholder%2C%20gold%20border%2C%20achievement%20badges%2C%20dark%20blue%20background%2C%20mobile%20app%20UI%20mockup&image_size=portrait_16_9" /></div>
+      <div class="shot"><img alt="Statistics dashboard" src="https://coresg-normal.trae.ai/api/ide/v1/text_to_image?prompt=Statistics%20dashboard%20mobile%20app%20UI%20with%20bar%20charts%2C%20win%20rate%2C%20streaks%2C%20difficulty%20breakdown%2C%20gold%20accents%20on%20dark%20navy%20background%2C%20clean%20flat%20design&image_size=portrait_16_9" /></div>
+    </div>
+  </div>
+</section>
+
+<section id="rules">
+  <div class="container">
+    <h2>How to play Tüppen</h2>
+    <p class="muted">A four-card hand, three players, and one decisive trick.</p>
+    <div class="rules" style="margin-top:20px">
+      <ol>
+        <li>Each round begins with a four-card deal from a 32-card deck.</li>
+        <li>The <strong>Seven of Diamonds</strong> must lead the opening trick.</li>
+        <li>Before play begins, every player may <strong>Knock (Klopfen)</strong>, <strong>Stand (Behalten)</strong>, or <strong>Pass (Passen)</strong>. If everyone else folds, the knocker wins the round immediately.</li>
+        <li>Otherwise the table plays four tricks in classic order. Players follow suit whenever they can.</li>
+        <li>Whoever plays the <strong>King of Clubs</strong> on the fourth trick claims the entire round and every outstanding point.</li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<section id="privacy">
+  <div class="container">
+    <h2>Your data stays on your device.</h2>
+    <p class="muted">Tuppen Royale is fully offline. No account, no sign-up, no tracking, no network play, no third-party analytics. Your photos, statistics, and match history never leave your phone.</p>
+    <p><a href="privacy.html">Read the full Privacy Policy →</a></p>
+  </div>
+</section>
+
+<section id="support">
+  <div class="container">
+    <div class="support">
+      <h2>Need a hand?</h2>
+      <p class="muted">We're happy to help with anything from rule questions to feature requests. Reach out any time.</p>
+      <p class="email">📧 <a href="mailto:a45984849@gmail.com">a45984849@gmail.com</a></p>
+      <p style="margin-top:18px;font-size:13px;color:var(--muted)">Average response time: 1–2 business days</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="foot-links">
+      <a href="index.html">Home</a>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="terms.html">Terms of Use</a>
+      <a href="#support">Support</a>
+      <a href="mailto:a45984849@gmail.com">Contact</a>
+    </div>
+    <div style="text-align:center">© 2026 Tuppen Royale. All rights reserved.</div>
+  </div>
+</footer>
+
+</body>
+</html>
